@@ -1,5 +1,5 @@
 
-function TopButtons (){
+function TopButtons ({setQuery}){
 
     const cities = [
         {
@@ -26,7 +26,9 @@ function TopButtons (){
     ]
 return <div className="flex items-center justify-around my-6">
     {cities.map((city)=>
-      <button className="text-lg font-medium hover:bg-gray-700/20 px-3 py-2 rounded-md transition ease-in" key={city.id}>{city.name}</button>
+      <button className="text-lg font-medium hover:bg-gray-700/20 px-3 py-2 rounded-md transition ease-in" 
+      onClick={()=> setQuery({q: city.name})}
+      key={city.id}>{city.name}</button>
     )}
     
     
