@@ -37,7 +37,7 @@ const formatBackground = ()=>{
   return "from-yellow-600 to-orange-700"
 }
    return (
-     <div className={`mx-auto max-w-screen-lg mt-4 py-5 px-32 bg-gradient-to-br shadow-xl shadow-gray-400 ${formatBackground()}`}>
+     <div className={`text-center sm:text-left mx-auto max-w-screen-lg mt-4 py-5 px-32 bg-gradient-to-br shadow-xl shadow-gray-400 ${formatBackground()}`}>
       <TopButtons setQuery={setQuery}/>
       <Inputs setQuery={setQuery} setUnits={setUnits}/>
      {weather && (
